@@ -1,0 +1,62 @@
+body {
+    text-align: center;
+    background: black;
+    color: white;
+    font-family: 'Trebuchet MS';
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+a {
+    background-color: white;
+    border: solid white;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 20px;
+    color: black;
+    margin: 10px;
+    display: block;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+a:hover {
+    animation: scale-a 0.3s forwards;
+}
+
+img {
+    border-radius: 75px;
+    margin-top: 20px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+i {
+    margin-right: 5px;
+}
+
+@keyframes scale-a {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
